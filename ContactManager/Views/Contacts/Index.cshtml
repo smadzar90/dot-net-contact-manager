@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ContactManager.Models.Contact>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-outline-secondary mb-2">Add Contact</a>
+</p>
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.Category)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ContactID">
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </a>
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ContactID">
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Name)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
