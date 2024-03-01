@@ -59,7 +59,7 @@ namespace ContactManager.Migrations
             migrationBuilder.InsertData(
                 table: "Contacts",
                 columns: new[] { "ContactID", "CategoryID", "DateAdded", "Email", "FirstName", "LastName", "Organisation", "Phone" },
-                values: new object[] { 1, 1, new DateTime(2024, 2, 29, 13, 44, 44, 912, DateTimeKind.Local).AddTicks(8204), "johndoe@example.com", "John", "Doe", "exampleORG", "(919)-312-8232" });
+                values: new object[] { 1, 1, new DateTime(2024, 3, 1, 13, 40, 5, 823, DateTimeKind.Local).AddTicks(3882), "johndoe@example.com", "John", "Doe", "exampleORG", "(919)-312-8232" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Contacts_CategoryID",

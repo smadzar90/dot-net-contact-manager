@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\smadzar90\\Desktop\\ContactManager\\ContactManager\\ContactManager.csproj": {}
+    "C:\\Users\\smadzar90\\Desktop\\dot-net-contact-manager\\ContactManager\\ContactManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\smadzar90\\Desktop\\ContactManager\\ContactManager\\ContactManager.csproj": {
+    "C:\\Users\\smadzar90\\Desktop\\dot-net-contact-manager\\ContactManager\\ContactManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\smadzar90\\Desktop\\ContactManager\\ContactManager\\ContactManager.csproj",
+        "projectUniqueName": "C:\\Users\\smadzar90\\Desktop\\dot-net-contact-manager\\ContactManager\\ContactManager.csproj",
         "projectName": "ContactManager",
-        "projectPath": "C:\\Users\\smadzar90\\Desktop\\ContactManager\\ContactManager\\ContactManager.csproj",
+        "projectPath": "C:\\Users\\smadzar90\\Desktop\\dot-net-contact-manager\\ContactManager\\ContactManager.csproj",
         "packagesPath": "C:\\Users\\smadzar90\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\smadzar90\\Desktop\\ContactManager\\ContactManager\\obj\\",
+        "outputPath": "C:\\Users\\smadzar90\\Desktop\\dot-net-contact-manager\\ContactManager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

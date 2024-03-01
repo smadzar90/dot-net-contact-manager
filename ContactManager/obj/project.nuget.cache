@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+83gSJUPRhLRkZPvfgL32sPB7ls8GLY3iSvdGx0EDjWnxsoAeX0Nx7DK0uCUVcV90JZjSguupNrOcWoOOFYwOg==",
+  "dgSpecHash": "SQlxFYa7DYbbrCmZZVOoQNwqlv4EmKWUULj7qwSzvD0rLroHtcd4jX6xTP8rOqvmPSm5b53JQ8ICVDFd+gQOMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\smadzar90\\Desktop\\ContactManager\\ContactManager\\ContactManager.csproj",
+  "projectFilePath": "C:\\Users\\smadzar90\\Desktop\\dot-net-contact-manager\\ContactManager\\ContactManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\smadzar90\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\smadzar90\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

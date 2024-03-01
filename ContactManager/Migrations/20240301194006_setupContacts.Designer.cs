@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContactManager.Migrations
 {
     [DbContext(typeof(ContactContext))]
-    [Migration("20240229194445_setupContacts")]
+    [Migration("20240301194006_setupContacts")]
     partial class setupContacts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -97,7 +97,7 @@ namespace ContactManager.Migrations
                         {
                             ContactID = 1,
                             CategoryID = 1,
-                            DateAdded = new DateTime(2024, 2, 29, 13, 44, 44, 912, DateTimeKind.Local).AddTicks(8204),
+                            DateAdded = new DateTime(2024, 3, 1, 13, 40, 5, 823, DateTimeKind.Local).AddTicks(3882),
                             Email = "johndoe@example.com",
                             FirstName = "John",
                             LastName = "Doe",
