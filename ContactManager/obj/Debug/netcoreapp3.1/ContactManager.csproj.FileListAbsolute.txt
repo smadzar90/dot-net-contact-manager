@@ -337,8 +337,6 @@ C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netc
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.RazorAssemblyInfo.cache
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.RazorAssemblyInfo.cs
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\ContactManager.StaticWebAssets.Manifest.cache
-C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\ContactManager.StaticWebAssets.xml
-C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\scopedcss\bundle\ContactManager.styles.css
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.TagHelpers.input.cache
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.TagHelpers.output.cache
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.RazorCoreGenerate.cache
@@ -357,3 +355,10 @@ C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netc
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.dll
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.pdb
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.genruntimeconfig.cache
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.csproj.AssemblyReference.cache
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\ContactManager.StaticWebAssets.Pack.cache
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.ContactManager.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.ContactManager.props
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.ContactManager.props
+C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.ContactManager.props

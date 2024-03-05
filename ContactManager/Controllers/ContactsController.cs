@@ -25,7 +25,7 @@ namespace ContactManager.Controllers
         }
 
         // GET: Contacts/Details/5
-        public async Task<IActionResult> Details(int? id, string slug)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -46,14 +46,11 @@ namespace ContactManager.Controllers
         // GET: Contacts/Create
         public IActionResult Create()
         {
-
             ViewBag.Categories = _context.Categories.OrderBy(c => c.Name).ToList();
             return View();
         }
 
         // POST: Contacts/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("FirstName,LastName,Phone,Email,CategoryID,Organisation")] Contact contact)
@@ -88,11 +85,9 @@ namespace ContactManager.Controllers
         }
 
         // POST: Contacts/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("FirstName,LastName,Phone,Email,CategoryID,Organisation")] Contact contact)
+        public async Task<IActionResult> Edit(int id, [Bind("ContactID,DateAdded,FirstName,LastName,Phone,Email,CategoryID,Organisation")] Contact contact)
         {
             if (id != contact.ContactID)
             {

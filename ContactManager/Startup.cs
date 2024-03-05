@@ -30,6 +30,11 @@ namespace ContactManager
             // Configure an SQL database
             services.AddDbContext<ContactContext>(options 
                 => options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=ContactDB;Trusted_Connection=True;MultipleActiveResultSets=true"));
+
+            services.AddRouting(options => {
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,7 +8,6 @@ namespace ContactManager.Models
 {
     public class ContactContext : DbContext
     {
-
         public ContactContext(DbContextOptions<ContactContext> options) 
             : base(options)
         {
