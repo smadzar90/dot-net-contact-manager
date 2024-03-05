@@ -33,12 +33,12 @@
             {
             <tr>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.ContactID">
+                    <a asp-action="Details" asp-route-id="@item.ContactID" asp-route-slug="@item.Slug">
                         @Html.DisplayFor(modelItem => item.FirstName)
                     </a>
                 </td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@item.ContactID">
+                    <a asp-action="Details" asp-route-id="@item.ContactID" asp-route-slug="@item.Slug">
                         @Html.DisplayFor(modelItem => item.LastName)
                     </a>
                 </td>

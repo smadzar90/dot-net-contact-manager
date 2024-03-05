@@ -330,7 +330,6 @@ C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\bin\Debug\netc
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.csprojAssemblyReference.cache
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.AssemblyInfoInputs.cache
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.AssemblyInfo.cs
 C:\Users\smadzar90\Desktop\dot-net-contact-manager\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.csproj.CoreCompileInputs.cache

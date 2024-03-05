@@ -56,12 +56,7 @@ namespace ContactManager
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Contacts}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                    name: "DetailsRoute",
-                    pattern: "{controller=Contacts}/{action=Details}/{id}/{slug}"
-                    );   
+                    pattern: "{controller=Contacts}/{action=Index}/{id?}/{slug?}"); 
             });
 
             

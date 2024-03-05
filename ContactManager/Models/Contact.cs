@@ -9,20 +9,20 @@ namespace ContactManager.Models
     public class Contact
     {
 
-        public Contact()
-        {
-            Slug = $"{FirstName}-{LastName}".ToLower().Replace(" ", "-");
-        }
         public int ContactID { get; set; }
 
+        [Required(ErrorMessage ="Please enter a first name.")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
+        [Required(ErrorMessage = "Please enter a last name.")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
+        [Required(ErrorMessage = "Please enter a phone number.")]
         public string Phone { get; set; }
 
+        [Required(ErrorMessage = "Please enter an email.")]
         public string Email { get; set; }
 
         public string Organisation { get; set; }
@@ -30,8 +30,9 @@ namespace ContactManager.Models
         [Display(Name = "Date added")]
         public DateTime DateAdded { get; set; }
 
-        public string Slug { get;  }
+        public string Slug => FirstName?.Replace(' ', '-').ToLower() + '-' + LastName?.Replace(' ', '-').ToLower();
 
+        [Required(ErrorMessage = "Please select a category.")]
         public int CategoryID { get; set; }
 
         public Category Category { get; set; }

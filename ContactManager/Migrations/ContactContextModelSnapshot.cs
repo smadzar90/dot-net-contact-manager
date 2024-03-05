@@ -70,18 +70,22 @@ namespace ContactManager.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Organisation")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ContactID");
@@ -95,7 +99,7 @@ namespace ContactManager.Migrations
                         {
                             ContactID = 1,
                             CategoryID = 1,
-                            DateAdded = new DateTime(2024, 3, 1, 13, 40, 5, 823, DateTimeKind.Local).AddTicks(3882),
+                            DateAdded = new DateTime(2024, 3, 5, 11, 16, 22, 648, DateTimeKind.Local).AddTicks(3211),
                             Email = "johndoe@example.com",
                             FirstName = "John",
                             LastName = "Doe",

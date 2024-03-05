@@ -12,7 +12,8 @@
             Name
         </div>
         <div class="col-sm-10">
-            @Html.DisplayFor(model => model.Slug)
+            @Html.DisplayFor(model => model.FirstName)
+            @Html.DisplayFor(model => model.LastName)
         </div>
     </div>
     <div class="row border-top border-left border-right py-3">
@@ -47,7 +48,7 @@
             @Html.DisplayFor(model => model.Organisation)
         </div>
     </div>
-    <div class="row border py-3">
+    <div class="row border-top border-left border-right py-3">
         <div class="col-sm-2 font-weight-bold">
             @Html.DisplayNameFor(model => model.DateAdded)
         </div>
@@ -55,9 +56,9 @@
             @Html.DisplayFor(model => model.DateAdded)
         </div>
     </div>
-</div>
-<div class="mt-3">
-    <a  class="btn btn-dark" asp-action="Edit" asp-route-id="@Model.ContactID">Edit</a>
-    <a  class="btn btn-dark" asp-action="Delete" asp-route-id="@Model.ContactID">Delete</a>
-    <a  class="btn btn-dark" asp-action="Index">Home</a>
+    <div class="row border py-3 pl-3">
+        <a class="btn btn-dark mr-1" asp-action="Edit" asp-route-id="@Model.ContactID">Edit</a>
+        <a class="btn btn-dark mr-1" asp-action="Delete" asp-route-id="@Model.ContactID">Delete</a>
+        <a class="btn btn-dark" asp-action="Index">Home</a>
+    </div>
 </div>

@@ -46,6 +46,8 @@ namespace ContactManager.Controllers
         // GET: Contacts/Create
         public IActionResult Create()
         {
+
+            ViewBag.Categories = _context.Categories.OrderBy(c => c.Name).ToList();
             return View();
         }
 
@@ -54,10 +56,12 @@ namespace ContactManager.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ContactID,FirstName,LastName,Phone,Email,Organisation,DateAdded")] Contact contact)
+        public async Task<IActionResult> Create([Bind("FirstName,LastName,Phone,Email,CategoryID,Organisation")] Contact contact)
         {
             if (ModelState.IsValid)
             {
+                contact.DateAdded = DateTime.Now;
+
                 _context.Add(contact);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -68,6 +72,8 @@ namespace ContactManager.Controllers
         // GET: Contacts/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            ViewBag.Categories = _context.Categories.OrderBy(c => c.Name).ToList();
+
             if (id == null)
             {
                 return NotFound();
@@ -86,7 +92,7 @@ namespace ContactManager.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ContactID,FirstName,LastName,Phone,Email,Organisation,DateAdded")] Contact contact)
+        public async Task<IActionResult> Edit(int id, [Bind("FirstName,LastName,Phone,Email,CategoryID,Organisation")] Contact contact)
         {
             if (id != contact.ContactID)
             {

@@ -4,15 +4,11 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
-
-<h4>Contact</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+<h1>Edit Contact</h1>
+<div class="row mt-3">
+    <div class="col-md-5">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ContactID" />
             <div class="form-group">
                 <label asp-for="FirstName" class="control-label"></label>
                 <input asp-for="FirstName" class="form-control" />
@@ -34,23 +30,25 @@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="CategoryID" class="control-label">Category</label>
+                <select asp-for="CategoryID" class="form-control">
+                    <option value="" disabled>select a category</option>
+                    @foreach (Category c in ViewBag.Categories)
+                    {
+                        <option value="@c.CategoryID">@c.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
                 <label asp-for="Organisation" class="control-label"></label>
                 <input asp-for="Organisation" class="form-control" />
                 <span asp-validation-for="Organisation" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DateAdded" class="control-label"></label>
-                <input asp-for="DateAdded" class="form-control" />
-                <span asp-validation-for="DateAdded" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <button type="submit" class="btn btn-dark">Edit</button>
+                <a class="btn btn-dark" asp-action="Details" asp-route-id="@Model.ContactID">Cancel</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 

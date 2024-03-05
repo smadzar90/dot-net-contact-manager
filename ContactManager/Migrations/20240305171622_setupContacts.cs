@@ -26,10 +26,10 @@ namespace ContactManager.Migrations
                 {
                     ContactID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    FirstName = table.Column<string>(nullable: true),
-                    LastName = table.Column<string>(nullable: true),
-                    Phone = table.Column<string>(nullable: true),
-                    Email = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(nullable: false),
+                    LastName = table.Column<string>(nullable: false),
+                    Phone = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
                     Organisation = table.Column<string>(nullable: true),
                     DateAdded = table.Column<DateTime>(nullable: false),
                     CategoryID = table.Column<int>(nullable: false)
@@ -59,7 +59,7 @@ namespace ContactManager.Migrations
             migrationBuilder.InsertData(
                 table: "Contacts",
                 columns: new[] { "ContactID", "CategoryID", "DateAdded", "Email", "FirstName", "LastName", "Organisation", "Phone" },
-                values: new object[] { 1, 1, new DateTime(2024, 3, 1, 13, 40, 5, 823, DateTimeKind.Local).AddTicks(3882), "johndoe@example.com", "John", "Doe", "exampleORG", "(919)-312-8232" });
+                values: new object[] { 1, 1, new DateTime(2024, 3, 5, 11, 16, 22, 648, DateTimeKind.Local).AddTicks(3211), "johndoe@example.com", "John", "Doe", "exampleORG", "(919)-312-8232" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Contacts_CategoryID",
