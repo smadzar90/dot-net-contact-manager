@@ -8,11 +8,11 @@ Built using the .NET framework and utilizing an SQL database for storing informa
 
 ## 🔧 How to Run
 
-    ```
+    
     cd dot-net-contact-manager/ContactManager
     dotnet build
     dotnet run
-    ```
+    
 
 Alternatively, you can:
    
