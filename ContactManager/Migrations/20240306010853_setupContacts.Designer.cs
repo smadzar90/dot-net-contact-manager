@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContactManager.Migrations
 {
     [DbContext(typeof(ContactContext))]
-    [Migration("20240305171622_setupContacts")]
+    [Migration("20240306010853_setupContacts")]
     partial class setupContacts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,12 +101,34 @@ namespace ContactManager.Migrations
                         {
                             ContactID = 1,
                             CategoryID = 1,
-                            DateAdded = new DateTime(2024, 3, 5, 11, 16, 22, 648, DateTimeKind.Local).AddTicks(3211),
+                            DateAdded = new DateTime(2024, 3, 5, 19, 8, 52, 910, DateTimeKind.Local).AddTicks(5913),
                             Email = "johndoe@example.com",
                             FirstName = "John",
                             LastName = "Doe",
                             Organisation = "exampleORG",
                             Phone = "(919)-312-8232"
+                        },
+                        new
+                        {
+                            ContactID = 2,
+                            CategoryID = 4,
+                            DateAdded = new DateTime(2024, 3, 5, 19, 8, 52, 912, DateTimeKind.Local).AddTicks(4529),
+                            Email = "alexsmith@example.com",
+                            FirstName = "Alex",
+                            LastName = "Smith",
+                            Organisation = "ORG2",
+                            Phone = "(919)-354-2475"
+                        },
+                        new
+                        {
+                            ContactID = 3,
+                            CategoryID = 1,
+                            DateAdded = new DateTime(2024, 3, 5, 19, 8, 52, 912, DateTimeKind.Local).AddTicks(4571),
+                            Email = "adamdoe@example.com",
+                            FirstName = "Adam",
+                            LastName = "Doe",
+                            Organisation = "ORG21",
+                            Phone = "(919)-352-8992"
                         });
                 });
 

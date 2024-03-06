@@ -30,6 +30,28 @@ namespace ContactManager.Models
                 Organisation = "exampleORG",
                 DateAdded = DateTime.Now,
                 CategoryID = 1
+            },
+            new Contact
+            {
+                ContactID = 2,
+                FirstName = "Alex",
+                LastName = "Smith",
+                Phone = "(919)-354-2475",
+                Email = "alexsmith@example.com",
+                Organisation = "ORG2",
+                DateAdded = DateTime.Now,
+                CategoryID = 4
+            },
+            new Contact
+            {
+                ContactID = 3,
+                FirstName = "Adam",
+                LastName = "Doe",
+                Phone = "(919)-352-8992",
+                Email = "adamdoe@example.com",
+                Organisation = "ORG21",
+                DateAdded = DateTime.Now,
+                CategoryID = 1
             });
 
             modelBuilder.Entity<Category>().HasData(
