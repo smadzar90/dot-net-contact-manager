@@ -3,7 +3,7 @@
 ## 📖  Description 
 
 The Contact Manager is a simple .NET application designed for learning purposes, aiming to streamline the management of contacts through intuitive CRUD (Create, Read, Update, Delete) operations. 
-Built using the .NET framework, this application provides a user experience for efficiently organizing and maintaining contact information while facilitating learning and exploration of C# and .NET development.
+Built using the .NET framework, this application provides a user experience for organizing and maintaining contact information while facilitating learning and exploration of C# and .NET development.
 
 
 ## 🔧 How to Run
