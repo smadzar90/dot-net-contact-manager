@@ -12,11 +12,10 @@ Built using the .NET framework and utilizing an SQL database for storing informa
     cd dot-net-contact-manager/ContactManager
     dotnet build
     dotnet run
-    
 
 Alternatively, you can:
    
-1. **Open in Visual Studio:**
+**Open in Visual Studio:**
    - Open the solution file in Visual Studio.
    - Build the solution.
    - Run the project.
